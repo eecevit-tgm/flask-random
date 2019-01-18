@@ -8,6 +8,8 @@ cache:
   directories:
     - ~/.npm
     - ~/.cache
+before_install:
+  - cd flask-vue-spa
 install:
 - npm install
 before_script:
