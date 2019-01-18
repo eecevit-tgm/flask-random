@@ -1,6 +1,7 @@
 language: python
 python:
   - "3.7"
+  - "2.7"
 node_js:
   - 10
 
@@ -11,7 +12,6 @@ cache:
     - ~/.npm
     - ~/.cache
 install:
-  # use the new "ci" command for fastest installs on CI
 - npm install
 before_script:
   ## runs the 'start' script which
