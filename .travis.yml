@@ -1,4 +1,4 @@
-language: python, node_js
+language: python
 node_js:
   - 10
 cache:
@@ -7,5 +7,4 @@ cache:
     - ~/.cache
 install:
   - npm install
-script:
-  - $(npm bin)/cypress run --record
+script: "./node_modules/.bin/cypress run"
